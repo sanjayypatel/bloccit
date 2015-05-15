@@ -8,4 +8,8 @@ class WelcomeController < ApplicationController
   #about references the auto-generated view associated with WelcomeController
   def about
   end
+
+  def contact
+  end
+  
 end

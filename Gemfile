@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
+#add pry for alternative to IRB/rails console
+gem 'pry-rails', :group => :development
 
 # Use sqlite3 for development and PostgreSQL for production on Heroku
  group :production do

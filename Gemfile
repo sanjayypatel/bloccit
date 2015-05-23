@@ -62,3 +62,6 @@ end
 
 # Use Devise for user authentication
 gem 'devise'
+
+# Use Figaro for securely storing env variables
+gem 'figaro', '1.0'

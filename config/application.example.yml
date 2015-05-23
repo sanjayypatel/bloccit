@@ -1,0 +1,4 @@
+# Bloccit expects values for these ENV variables in a .gitignored config/application.yml file
+SENDGRID_USERNAME:
+SENDGRID_PASSWORD:
+SECRET_KEY_BASE:

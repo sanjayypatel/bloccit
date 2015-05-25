@@ -65,3 +65,6 @@ gem 'devise'
 
 # Use Figaro for securely storing env variables
 gem 'figaro', '1.0'
+
+# Pundit to manage authorization of tasks
+gem 'pundit'

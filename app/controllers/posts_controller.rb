@@ -3,6 +3,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @topic = Topic.find(params[:topic_id])
+    @summary = @post.summary
     # look at routes - Rails convention dictates that the params hash will have a :topic_id
     authorize @post
   end

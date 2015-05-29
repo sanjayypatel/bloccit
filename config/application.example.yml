@@ -1,4 +1,13 @@
 # Bloccit expects values for these ENV variables in a .gitignored config/application.yml file
 SENDGRID_USERNAME:
 SENDGRID_PASSWORD:
+
 SECRET_KEY_BASE:
+
+AWS_ACCESS_KEY_ID:
+AWS_SECRET_ACCESS_KEY:
+
+development:
+  AWS_BUCKET:
+production:
+  AWS_BUCKET:

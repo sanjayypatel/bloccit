@@ -72,3 +72,9 @@ gem 'pundit'
 # Use Redcarpet for Post Markdown
 gem 'redcarpet'
 
+# Use CarrierWave for image uploading and MiniMagick for image processing
+gem 'carrierwave'
+gem 'mini_magick'
+
+# Use Fog to integrate S3 storage for images
+gem 'fog'

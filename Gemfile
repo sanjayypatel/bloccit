@@ -68,3 +68,7 @@ gem 'figaro', '1.0'
 
 # Pundit to manage authorization of tasks
 gem 'pundit'
+
+# Use Redcarpet for Post Markdown
+gem 'redcarpet'
+

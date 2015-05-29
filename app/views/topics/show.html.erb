@@ -11,9 +11,15 @@
     <% @posts.each do |post| %>
       <div class="media">
         <div class="media-body">
+
           <h4 class="media-heading">
             <%= link_to (markdown_to_html post.title), [@topic, post] %>
           </h4>
+          <small>
+            <% if post.image? %>
+              Preview: <%= image_tag (post.image.small.url) %>
+            <% end %>
+          </small><br>
           <small>
             <%= image_tag (post.user.avatar.tiny.url) if post.user.avatar? %>
             submitted <%= time_ago_in_words(post.created_at) %> ago by 

@@ -78,3 +78,6 @@ gem 'mini_magick'
 
 # Use Fog to integrate S3 storage for images
 gem 'fog'
+
+# Use will_paginate for topics pagination
+gem 'will_paginate', '~> 3.0.5'

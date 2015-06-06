@@ -81,3 +81,8 @@ gem 'fog'
 
 # Use will_paginate for topics pagination
 gem 'will_paginate', '~> 3.0.5'
+
+# User RSpec for automated tests
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end

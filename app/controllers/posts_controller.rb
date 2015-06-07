@@ -6,6 +6,8 @@ class PostsController < ApplicationController
     @comments = @post.comments
     # look at routes - Rails convention dictates that the params hash will have a :topic_id
     authorize @post
+    # call to authorize post also authorizes comments, since they should only be shown in
+    # the context of their parent post.
   end
 
   def new

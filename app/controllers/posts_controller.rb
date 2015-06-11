@@ -5,6 +5,7 @@ class PostsController < ApplicationController
     @topic = Topic.find(params[:topic_id])
     @comments = @post.comments
     # look at routes - Rails convention dictates that the params hash will have a :topic_id
+    authorize @topic
     authorize @post
     # call to authorize post also authorizes comments, since they should only be shown in
     # the context of their parent post.

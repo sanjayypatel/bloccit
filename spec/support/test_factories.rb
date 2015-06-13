@@ -1,5 +1,14 @@
 module TestFactories 
 
+  def associated_comment(options={})
+    comment_options = {
+      body: 'A comment body.',
+      user: authenticated_user,
+      post: associated_post
+    }.merge(options)
+    Comment.create(comment_options)
+  end
+
   def associated_post(options={})
     post_options = {
       title: 'Post Title',

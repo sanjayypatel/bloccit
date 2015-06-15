@@ -21,8 +21,8 @@ describe User do
 
       #Create a second user with an additional comment
       @user2 = create(:user_with_post_and_comment)
-      @post = @user2.posts.first
-      create(:comment, user: @user2, post: @post)
+      post = @user2.posts.first
+      create(:comment, user: @user2, post: post)
     end
 
     it "returns users ordered by comments + posts" do

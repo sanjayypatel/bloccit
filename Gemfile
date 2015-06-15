@@ -87,6 +87,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Use Factory Girl for testing
+gem 'factory_girl_rails', '~> 4.0'
+
 # Use Capybara for Feature Specs
 group :test do
   gem 'capybara'
@@ -94,3 +97,5 @@ end
 
 # Use New Relic for Performance Monitoring
 gem 'newrelic_rpm'
+
+

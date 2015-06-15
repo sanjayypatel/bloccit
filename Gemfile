@@ -91,3 +91,6 @@ end
 group :test do
   gem 'capybara'
 end
+
+# Use NewRelic to monitor performance
+gem 'newrelic_rpm'

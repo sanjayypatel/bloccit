@@ -1,6 +1,6 @@
 
 <h4>New Comment</h4>
-<%= form_for [post, post.comments.new] do |f| %>
+<%= form_for [post, post.comments.new], remote: true do |f| %>
 
   <div class="form-group">
     <%= f.label :body %>
